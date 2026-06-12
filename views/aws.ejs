@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AWS Infrastructure - CloudFlow</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#111827;
+    color:white;
+}
+
+.header{
+    background:#1f2937;
+    padding:20px;
+    border-bottom:3px solid #22c55e;
+}
+
+.header h1{
+    margin:0;
+    color:#22c55e;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1f2937;
+    padding:20px;
+    border-radius:12px;
+    border-left:5px solid #f97316;
+}
+
+.card h2{
+    color:#f97316;
+}
+
+.status{
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.architecture{
+    margin-top:30px;
+    background:#1f2937;
+    padding:20px;
+    border-radius:12px;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 20px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.back-btn:hover{
+    opacity:0.8;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>AWS Infrastructure Overview</h1>
+</div>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+    <h2>Jenkins Controller</h2>
+
+    <p><strong>Public IP:</strong> 52.201.239.60</p>
+
+    <p><strong>Role:</strong> CI/CD Controller</p>
+
+    <p><strong>Status:</strong>
+    <span class="status">Running</span></p>
+
+    <p><strong>Region:</strong> us-east-1</p>
+</div>
+
+<div class="card">
+    <h2>Jenkins Agent</h2>
+
+    <p><strong>Public IP:</strong> 54.175.56.17</p>
+
+    <p><strong>Role:</strong> Build Executor</p>
+
+    <p><strong>Status:</strong>
+    <span class="status">Running</span></p>
+
+    <p><strong>Region:</strong> us-east-1</p>
+</div>
+
+<div class="card">
+    <h2>Security & Networking</h2>
+
+    <p>✓ SSH (22)</p>
+
+    <p>✓ Jenkins (8081)</p>
+
+    <p>✓ NodeJS Dashboard (3000)</p>
+
+    <p>✓ Docker Enabled</p>
+</div>
+
+<div class="card">
+    <h2>Cloud Services</h2>
+
+    <p>Amazon EC2</p>
+
+    <p>Docker Containers</p>
+
+    <p>Jenkins Automation</p>
+
+    <p>GitHub Integration</p>
+</div>
+
+</div>
+
+<div class="architecture">
+
+<h2>Architecture</h2>
+
+<pre>
+GitHub
+   │
+   ▼
+Jenkins Controller
+   │
+   ▼
+Jenkins Agent
+   │
+   ▼
+Node.js Dashboard
+</pre>
+
+</div>
+
+<a href="/" class="back-btn">
+← Back To Dashboard
+</a>
+
+</div>
+
+</body>
+</html>

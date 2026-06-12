@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudFlow DevOps Dashboard</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        body {
+            background-color: #111827;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #1f2937;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #22c55e;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #22c55e;
+        }
+
+        h2 {
+            color: #f97316;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CloudFlow DevOps Dashboard</h1>
+
+    <h2>Atoyebi Micheal A.</h2>
+
+    <p>Cloud & DevOps Engineer</p>
+
+    <div class="dashboard-grid">
+
+        <a href="/aws">
+            <div class="card">
+                <h2>AWS Infrastructure</h2>
+                <p>Status: Running</p>
+                <p>Region: us-east-1</p>
+            </div>
+        </a>
+
+        <a href="/jenkins">
+            <div class="card">
+                <h2>Jenkins Pipeline</h2>
+                <p>Status: Connected</p>
+                <p>Pipeline: Healthy</p>
+            </div>
+        </a>
+
+        <a href="/docker">
+            <div class="card">
+                <h2>Docker Monitoring</h2>
+                <p>Status: Active</p>
+                <p>Containers: Running</p>
+            </div>
+        </a>
+
+        <a href="/github">
+            <div class="card">
+                <h2>GitHub Repository</h2>
+                <p>Repository: nodejs-cicd-project</p>
+                <p>Branch: main</p>
+            </div>
+        </a>
+
+        <a href="/deployments">
+            <div class="card">
+                <h2>Deployment History</h2>
+                <p>Version: v1.0.0</p>
+                <p>Status: Successful</p>
+            </div>
+        </a>
+
+    </div>
+
+    <br><br>
+
+    <div class="card">
+        <h2>System Metrics</h2>
+
+        <p>Hostname: <%= hostname %></p>
+
+        <p>Platform: <%= platform %></p>
+
+        <p>Uptime: <%= uptime %> minutes</p>
+
+    </div>
+
+</body>
+</html>
