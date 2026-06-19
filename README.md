@@ -183,4 +183,4 @@ Through this project, the following objectives were achieved:
 ## Author
 
 Atoyebi Micheal
-Cloud Computing / DevOps Engineering Project
+CodeAlpha DevOps Inernship Project
